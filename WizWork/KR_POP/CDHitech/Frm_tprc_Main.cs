@@ -344,6 +344,19 @@ namespace WizWork
                     //    }
                     //    break;
 
+
+                    //현장 호출 추가 2022-10-20
+                    case 15:
+                        btnimage(15);
+                        frm_tprc_WorkCall_U child10 = new frm_tprc_WorkCall_U();
+                        child10.StartPosition = FormStartPosition.CenterScreen;
+                        child10.Owner = this;
+                        if (child10.ShowDialog() == DialogResult.OK)
+                        {
+
+                        };
+                        break;
+
                     case 18:
                         btnimage(18);
                         frm_tprc_setProcess child9 = new frm_tprc_setProcess(true);//NoWork == true라는 bool값
@@ -844,6 +857,7 @@ namespace WizWork
             //btnDailyCheckQ.Tag = "12";
             //btnDailyMoldQ.Tag = "13";
 
+            btnCall.Tag = "15"; //2022-10-20 현장 호출 추가
             btnChoiceWorker.Tag = "18";
             btnSetting.Tag = "19";
             btnExit.Tag = "20";
